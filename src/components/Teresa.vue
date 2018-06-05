@@ -45,7 +45,7 @@ export default {
 }
 .quem-img {
     background-image: url('../assets/img3934.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     min-height: 50vh;
 }
