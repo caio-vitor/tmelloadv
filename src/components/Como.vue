@@ -1,0 +1,86 @@
+<template>
+    <div id="como">
+        <div class="btn-1" v-if="counter > 0" v-on:click="counter -= 1">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="como-wrap" v-bind:class="colors[counter]"></div>
+        <div class="btn-2" v-if="counter < colors.length - 1" v-on:click="counter += 1">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+  name: 'Como',
+  data: function () {
+      return {
+          counter: 0,
+          colors: ["bg-1", "bg-2", "bg-3"]
+      }
+  }
+}
+</script>
+
+<style scoped>
+#como {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cinza-5);
+    display: grid;
+    grid-template-columns: 15vw 1fr 15vw;
+    grid-template-rows: 10vh 1fr 10vh;
+    align-items: center;
+    justify-items: center;
+}
+
+.bg-1 {
+    background-image: url('../assets/comopg1.jpg');
+}
+.bg-2 {
+    background-image: url('../assets/comopg2.jpg');
+}
+.bg-3 {
+    background-image: url('../assets/comopg3.jpg');
+}
+
+.btn-1, .btn-2 {
+    width: 50px;
+    height: 50px;
+    background-color: var(--cinza-1);
+    color: white;
+    font-size: 30px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+}
+
+.btn-1 {
+    grid-row: 2;
+    grid-column: 1;
+}
+.btn-2 {
+    grid-row: 2;
+    grid-column: 3;
+}
+.como-wrap {
+    width: 67.7vw;
+    height: 41.66vw;
+    border: 1px solid var(--cinza-2);
+    grid-column: 2;
+    grid-row: 2;
+    background-position: center;
+}
+@media (max-width: 768px) {
+    .btn-1, .btn-2 {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .como-wrap {
+        width: 100%;
+        height: 100%;
+    }
+}
+</style>
