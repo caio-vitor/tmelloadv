@@ -1,5 +1,8 @@
 <template>
     <div id="quem-somos">
+        <div class="fale">
+            <h1>Quem Somos</h1>
+        </div>
         <div class="quem-wrap">
             <transition name="botão">
             <button v-if="show" @click="show = !show"><i class="fas fa-arrow-right"></i></button>
@@ -34,6 +37,19 @@ export default {
 <style scoped>
 #quem-somos {
     min-height: 100vh;
+}
+.fale {
+  background-color: var(--cinza-5);
+  display: flex;
+  height: 18vh;
+}
+.fale h1 {
+  margin: 0;
+  margin-left: 10vw;
+  text-transform: uppercase;
+  color: var(--cinza-2);
+  align-self: center;
+  font-size: 7vh;
 }
 .quem-wrap {
     position: relative;

@@ -1,7 +1,6 @@
 <template>
     <div id="hero">
         <img class="logo-hero" src="@/assets/logo-tm.svg">
-        <p>Passe o mouse sobre o logo para testar a cor ⬆</p>
         <img class="scroll" src="@/assets/scroll-icon.svg">
     </div>
 </template>
@@ -22,24 +21,21 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
-    grid-template-rows: 1fr 10vh 1fr;
+    grid-template-rows: 10vh 1fr 1fr;
     align-items: center;
     justify-items: center;
-    cursor: pointer;
 }
 .logo-hero {
     margin-top: 25vh;
-    max-width: 80vw;
-    transition: all 0.5s ease;
+    max-width: 30vw;
+    grid-row: 2;
 }
 .scroll {
     max-width: 25vw;
+    grid-row: 3;
 }
 p {
     margin: 0;
     color: white;
-}
-.logo-hero:hover {
-    filter: invert(.8) sepia(.3);
 }
 </style>

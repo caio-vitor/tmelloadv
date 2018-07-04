@@ -1,6 +1,6 @@
 <template>
     <div id="quem">
-        <div class="quem-img"></div>
+        <div class="quem-img" v-on:click="counter < 1 ? counter += 1 : counter = 0" v-bind:class="img[counter]"></div>
         <div class="quem-txt">
             <h3>TERESA CRISTINA MELLO DE ALMEIDA PRADO</h3>
             <small>OAB/SP 107.110</small>
@@ -31,7 +31,13 @@
 
 <script>
 export default {
-  name: 'Teresa'
+  name: 'Teresa',
+  data: function () {
+      return {
+          counter: 0,
+          img: ["img1", "img1-2"]
+      }
+    }
 }
 </script>
 
@@ -44,9 +50,22 @@ export default {
     box-sizing: border-box;
 }
 .quem-img {
-    background-image: url('../assets/img3934.jpg');
     background-size: cover;
     min-height: 50vh;
+    cursor: pointer;
+}
+.img1 {
+    background-image: url('../assets/teresa.jpg');
+    transition: all 0.3s ease;
+}
+
+.img1-2 {
+    background: 
+    linear-gradient(var(--camelo), var(--camelo)),
+    url('../assets/teresa.jpg');
+    background-blend-mode: color;
+    background-size: cover;
+    transition: all 0.8s ease;
 }
 .quem-txt {
     background-color: var(--cinza-2);

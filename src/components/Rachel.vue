@@ -1,6 +1,6 @@
 <template>
     <div id="quem">
-        <div class="quem-img"></div>
+        <div class="quem-img" v-on:click="counter < 1 ? counter += 1 : counter = 0" v-bind:class="img[counter]"></div>
         <div class="quem-txt">
             <h3>RACHEL CANTO FIGUEIREDO</h3>
             <small>Advogada associada</small>
@@ -12,7 +12,13 @@
 
 <script>
 export default {
-  name: 'Rachel'
+  name: 'Rachel',
+  data: function () {
+      return {
+          counter: 0,
+          img: ["img1", "img1-2"]
+      }
+    }
 }
 </script>
 
@@ -25,18 +31,32 @@ export default {
     box-sizing: border-box;
 }
 .quem-img {
-    background-image: url('../assets/img3916.jpg');
     background-size: cover;
     min-height: 50vh;
+    cursor: pointer;
 }
+.img1 {
+    background-image: url('../assets/img3916.jpg');
+    transition: all 0.3s ease;
+}
+
+.img1-2 {
+    background: 
+    linear-gradient(var(--vermelho), var(--vermelho)),
+    url('../assets/img3916.jpg');
+    background-blend-mode: color;
+    background-size: cover;
+    transition: all 0.8s ease;
+}
+
 .quem-txt {
-    background-color: white;
-    color: var(--cinza-4);
+    background-color:var(--camelo);
+    color: var(--cinza-5);
     padding: 5vh 15vw 5vh 5vw;
 }
 h3 {
     margin-top: 10vh;
-    color: var(--camelo);
+    color: var(--cinza-5);
     font-size: 3.5vh;
     margin-bottom: 1vh;
 }
