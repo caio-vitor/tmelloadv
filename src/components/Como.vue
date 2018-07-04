@@ -98,6 +98,7 @@ export default {
     grid-column: 2;
     grid-row: 3;
     background-position: center;
+    background-size: cover;
 }
 @media (max-width: 768px) {
     .btn-1, .btn-2 {

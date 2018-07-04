@@ -51,6 +51,7 @@ export default {
 }
 .quem-img {
     background-size: cover;
+    background-position: right;
     min-height: 50vh;
     cursor: pointer;
 }
