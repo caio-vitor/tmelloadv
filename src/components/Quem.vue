@@ -41,7 +41,7 @@ export default {
 .fale {
   background-color: var(--cinza-5);
   display: flex;
-  height: 18vh;
+  height: 12vh;
 }
 .fale h1 {
   margin: 0;
@@ -49,7 +49,7 @@ export default {
   text-transform: uppercase;
   color: var(--cinza-2);
   align-self: center;
-  font-size: 7vh;
+  font-size: 5vh;
 }
 .quem-wrap {
     position: relative;

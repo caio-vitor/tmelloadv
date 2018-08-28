@@ -3,28 +3,11 @@
         <div class="quem-img" v-on:click="counter < 1 ? counter += 1 : counter = 0" v-bind:class="img[counter]"></div>
         <div class="quem-txt">
             <h3>TERESA CRISTINA MELLO DE ALMEIDA PRADO</h3>
-            <small>OAB/SP 107.110</small>
-            <h5>30 anos de atuação</h5>
-            <ul>
-                <li>Formada em <b>Direito pela Faculdade de Direito do Largo São Francisco</b> (Universidade de São Paulo) em 1989 e com especialização  pelo  <b>CEEU (Centro de Estudos de Extensão Universitária) na área IR e Processo de Execução</b>;</li>
-                <li><b>Pós graduação na GV LAW</b> em "Estratégias Societárias, Sucessórias e Tributação", 2009;</li>
-                <li>FGV/2011: Direitos Humanos, com foco no Direito das Mulheres e Discriminação Racial;</li>
-                <li>Membro de grupo de estudos regulares de psicologia, presidido  por psicóloga da Sociedade Brasileira de Psicologia Analítica, de 2012 a 2017;</li>
-                <li>MEDIAÇÃO e técnicas, cursado no IASP, em 2012.</li>
-            </ul>
-            <h5>Cursos no exterior</h5>
-            <p><b>Harvard Law School</b>, “Investimentos Estrangeiros em Países em Desenvolvimento”e Direito Tributário – 1988;  <b>Queen Mary & Westfield College, Universidade de Londres</b>: “Direito Tributário Internacional” e Direito do Comércio Internacional”, 1996; <b>Kings’s College, Universidade de Londres, “EC Law”</b> – Legislação da Comunidade Européia, Londres, 1996.</p>
-            <p>Autora de diversos artigos e correspondente brasileira do periódico mensal britânico “World Tax Report” do Financial Times, de 1996 a 1998, e do periódico americano “Tax Notes International – TNI”, de 1991 a 1997.</p>
-            <h5>Experiência profissional</h5>
-            <ul>
-                <li>Fundadora do <b>MELLO & KOUZNETZ com Adriana Kouznetz de Souza e Silva Fernandes há 5 anos em 2011 e desde 2017 atuando por TERESA MELLO Sociedade de Advogados</b>.</li>
-                <li>2008 a 2010, como autônoma e consultora contratual e societária vinculada ao escritório <b>ADVOCACIA LUNARDELLI.</b></li>
-                <li>Em 1991 fundou o escritório de advocacia empresarial, <b>ALMEIDA, MELLO E BRAGA</b>, onde atuou  por 10 (dez) anos, e foi responsável pela área de Direito Comercial, Societário e de Contratos, bem como Investimento estrangeiro/ Banco Central.</li>
-                <li>Estágio no escritório PAISNER & CO., Londres, na área de Direito tributário Internacional, 1996.</li>
-                <li>Entre 1990 e 1991, advogada da <b>BRAGA & MARAFON ADVOGADOS ASSOCIADOS</b>.</li>
-                <li>Entre 1988 a 1990, consultora júnior e plena, <b>DA KPMG PEAT MARWICK</b>, atuando no contencioso fiscal e administrativo, contratos, societário com ênfase em  fusões, cisões aquisições.</li>
-                <li>Estágios profissionais desde 1985: Advocacia Aldo Raia, Depto. Jurídico da Alcoa Alumínio S/A, Hlavnicka, Araújo e Thiollier advogados.</li>
-            </ul>
+            <p>Inicio da experiência em estágios em 1985, formando-se em 1989 pela Faculdade de Direito do Largo São Francisco.</p> 
+            <p>Experiência muito diversificada junto a empresas, escritórios de advocacia empresarial, empresa de auditoria fiscal e como sócia de escritórios desde 1991.</p>
+            <p>15 anos na advocacia empresarial e há 10 anos na advocacia cível e comercial com foco em questões patrimoniais, familiares e contratuais.</p>
+            <p>Trabalho pautado pela exigência de qualidade e observação aos detalhes e aprofundamento da análise do caso. Acredita na necessidade de pacificar as relações, mantendo-se estudiosa da psicologia aplicada ao direito.</p>
+            <p class="cv">Para CV completo, <a href="">clique aqui</a>.</p>
         </div>
     </div>
 </template>
@@ -85,18 +68,28 @@ small {
 p {
     font-family: var(--esteban);
 }
+p:first-of-type {
+    margin-top: 5vh;
+}
 b {
     color: white;
 }
-h5 {
-    font-size: 1.6vh;
-}
-h5:first-of-type {
+
+.cv {
     margin-top: 5vh;
+    font-family: var(--mont);
+    font-weight: 600;
+    color: var(--camelo);
 }
-ul {
-    font-family: var(--esteban);
+
+a {
+    text-decoration: none;
 }
+
+a:visited {
+    color: var(--vermelho);
+}
+
 @media (max-width: 768px) {
     #quem {
         grid-template-columns: 1fr;

@@ -2,13 +2,11 @@
   <div id="app">
     <Hero/>
     <Nav/>
-    <div class="prlx" v-on:click="counter1 < 2 ? counter1 += 1 : counter1 = 0" v-bind:class="img1[counter1]">
-      <p>clique na imagem para ver mais opções</p>
-    </div>
+    <div class="prlx img1"></div>
     <Quem/>
-    <div class="prlx" v-on:click="counter2 < 1 ? counter2 += 1 : counter2 = 0" v-bind:class="img2[counter2]"><p>clique na imagem para ver mais opções</p></div>
+    <div class="prlx img2"></div>
     <Como/>
-    <div class="prlx" v-on:click="counter3 < 1 ? counter3 += 1 : counter3 = 0" v-bind:class="img3[counter3]"><p>clique na imagem para ver mais opções</p></div>
+    <div class="prlx img3"></div>
     <Contato/>
     <Footer/>
   </div>
@@ -31,16 +29,6 @@ export default {
     Como,
     Contato,
     Footer
-  },
-  data: function () {
-      return {
-          counter1: 0,
-          counter2: 0,
-          counter3: 0,
-          img1: ["img1", "img1-2", "img1-3"],
-          img2: ["img2", "img2-2"],
-          img3: ["img3", "img3-2"]
-      }
   }
 }
 </script>
@@ -78,59 +66,17 @@ export default {
   background-image: url('./assets/img0807.jpg');
   transition: all 0.8s ease;
 }
-.img1-2 {
-  background: 
-  linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
-  url('./assets/img0807.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: color;
-  transition: all 0.8s ease;
-}
-.img1-3 {
-  background: 
-  linear-gradient(var(--camelo), var(--camelo)),
-  url('./assets/img0807.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: color;
-  transition: all 0.8s ease;
-}
 
 .img2 {
   background-image: url('./assets/img3859.jpg');
   transition: all 0.8s ease;
 }
-.img2-2 {
-  background: 
-  linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
-  url('./assets/img3859.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: color;
-  transition: all 0.8s ease;
-}
+
 .img3 {
   background-image: url('./assets/img3955.jpg');
   transition: all 0.8s ease;
 }
-.img3-2 {
-  background: 
-  linear-gradient(var(--vermelho), var(--vermelho)),
-  url('./assets/img3955.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: color;
-  transition: all 0.8s ease;
-}
+
 @media (max-width: 768px) {
   .prlx {
     height: 50vh;

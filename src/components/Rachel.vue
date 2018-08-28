@@ -4,8 +4,10 @@
         <div class="quem-txt">
             <h3>RACHEL CANTO FIGUEIREDO</h3>
             <small>Advogada associada</small>
-            <p>Rachel é advogada e bacharel em Direito pela Universidade Presbiteriana Mackenzie, com experiência internacional na Faculdade de Direito da Universidade Nova de Lisboa.</p>
-            <p>Atuante nas áreas cível e comercial, com experiência tanto no consultivo quanto no contencioso, bem como meios alternativos à  resolução de conflitos visando a  prevenção de litígios. Sua  experiência é diversificada em escritórios "Boutique" e médio porte, notadamente nas áreas de Família e Sucessões; Imobiliário; Responsabilidade Civil; Direito do Consumidor;  Insolvência e Reestruturação de Dívidas, incluindo a recuperação de créditos.</p>
+            <p>Advogada e bacharel em Direito pela Universidade Presbiteriana Mackenzie, com experiência internacional na Faculdade de Direito da Universidade Nova de Lisboa.</p>
+            <p>Atuante nas áreas cível e comercial. Experiência tanto no consultivo quanto no contencioso e  em meios alternativos à resolução de conflitos.</p>
+            <p>Perfil diversificado pela passagem por  escritórios "Boutique"  e de médio porte,  nas seguintes áreas:</p>
+            <p>de Família e Sucessões; Imobiliário; Responsabilidade Civil; Direito do Consumidor;  Insolvência e Reestruturação de Dívidas, incluindo a recuperação de créditos.</p>
         </div>
     </div>
 </template>
@@ -61,11 +63,11 @@ h3 {
     margin-bottom: 1vh;
 }
 small {
-    font-size: 1.5vh;
+    font-size: 2vh;
 }
 p {
     font-family: var(--esteban);
-    font-size: 1.6vh;
+    font-size: 2.5vh;
 }
 p:first-of-type {
     margin-top: 5vh;

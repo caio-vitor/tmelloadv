@@ -6,8 +6,8 @@
     <div class="contato-form-wrapper">
       <div class="form">
         <div class="intro">
-          <p>A TMello está sempre disposta a te ajudar!</p>
-          <p>Se você deseja fazer um a consulta, preencha os campos abaixo para solicitar um orçamento:</p>
+          <p>Na TMello estamos à disposição para lhe atender!</p>
+          <p>Caso deseje consultar-nos, preencha os campos abaixo para entrarmos em contato.</p>
         </div>
         <form action="">
           <input type="text" placeholder="Nome">
@@ -34,9 +34,14 @@
         <div class="links-uteis">
           <h5>Links úteis</h5>
           <ul>
-            <li>link 1</li>
-            <li>link 2</li>
-            <li>link 3</li>
+            <li><a href="http://www.oabsp.org.br/">OAB-SP</a></li>
+            <li><a href="http://portal.stf.jus.br">STF</a></li>
+            <li><a href="http://www.stj.jus.br/">STJ</a></li>
+          </ul>
+          <ul>
+            <li><a href="http://www12.senado.leg.br/hpsenado">Senado</a></li>
+            <li><a href="http://www.congressonacional.leg.br">Congresso Nacional</a></li>
+            <li><a href="http://www.cartorio24horas.com.br">Cartório 24h</a></li>
           </ul>
         </div>
         <div class="end">
@@ -59,7 +64,7 @@ export default {
 #contato {
     width: 100%;
     display: grid;
-    grid-template-rows: 18vh 1fr;
+    grid-template-rows: 12vh 1fr;
 }
 .fale {
   background-color: var(--cinza-5);
@@ -71,7 +76,7 @@ export default {
   text-transform: uppercase;
   color: var(--cinza-2);
   align-self: center;
-  font-size: 7vh;
+  font-size: 5vh;
 }
 .contato-form-wrapper {
   background-color: var(--cinza-3);
@@ -179,6 +184,29 @@ button:hover {
 }
 button li {
   list-style-type: square;
+}
+
+.links-uteis {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5vh 1fr;
+}
+
+.links-uteis h5 {
+  grid-column: span 2;
+  color: var(--camelo);
+}
+.links-uteis a {
+  color:var(--cinza-4);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.links-uteis a:visited {
+  color: var(--camelo);
+}
+
+.links-uteis a:hover {
+  color: white;
 }
 @media (max-width: 768px) {
   #contato{

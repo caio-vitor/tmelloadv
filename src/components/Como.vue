@@ -32,7 +32,7 @@ export default {
     background-color: var(--cinza-5);
     display: grid;
     grid-template-columns: 15vw 1fr 15vw;
-    grid-template-rows: 18vh 10vh 1fr 10vh;
+    grid-template-rows: 12vh 10vh 1fr 10vh;
     align-items: center;
     justify-items: center;
 }
@@ -50,7 +50,7 @@ export default {
   text-transform: uppercase;
   color: var(--cinza-2);
   align-self: center;
-  font-size: 7vh;
+  font-size: 5vh;
 }
 .bg-1 {
     background-image: url('../assets/como-pg-1-1.jpg');
